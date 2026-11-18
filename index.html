@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Nanami 🎂</title>
+<meta name="theme-color" content="#fff3d1">
+<meta property="og:title" content="A birthday card for Nanami 🎂">
+<meta property="og:description" content="Open your birthday card — 22 wishes from friends.">
+<meta property="og:image" content="images/1.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="backdrop" aria-hidden="true"></div>
+
+<div id="loader" role="status" aria-live="polite">
+  <div class="loader-cake">🎂</div>
+  <p class="loader-title">Wrapping your birthday card…</p>
+  <div class="bar"><span id="barFill"></span></div>
+  <p class="loader-pct" id="loaderPct">0%</p>
+</div>
+
+<main id="app" hidden>
+  <div id="card" aria-live="polite">
+    <img id="layerA" class="layer" alt="" draggable="false">
+    <img id="layerB" class="layer" alt="" draggable="false">
+    <div id="hotspots"></div>
+  </div>
+
+  <div id="hud">
+    <button id="prevBtn" class="hud-btn" aria-label="Previous slide">‹</button>
+    <button id="cta" class="pill" hidden></button>
+    <span id="counter" aria-label="Slide number">1 / 22</span>
+  </div>
+
+  <p id="rotateHint">Tip: turn your phone sideways for a bigger card ↻</p>
+</main>
+
+<noscript><p style="padding:2rem;text-align:center">Please enable JavaScript to open this birthday card 🎂</p></noscript>
+<script src="script.js"></script>
+</body>
+</html>
